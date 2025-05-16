@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
@@ -24,6 +25,8 @@ public class SignupPage extends AppCompatActivity {
     EditText txt_email,txt_password,txt_cPassword;
     Button btn_signup;
 
+
+
     FirebaseAuth firebaseAuth;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +40,17 @@ public class SignupPage extends AppCompatActivity {
         txt_password=findViewById(R.id.txt2);
         txt_cPassword=findViewById(R.id.txt3);
         btn_signup=findViewById(R.id.btnSignup);
+
+
+
+        TextView textView=findViewById(R.id.login_txt);
+        textView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(getApplicationContext(), LoginPage.class);
+                startActivity(intent);
+            }
+        });
 
        btn_signup.setOnClickListener(new View.OnClickListener() {
            @Override
