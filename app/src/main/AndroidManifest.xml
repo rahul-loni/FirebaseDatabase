@@ -13,6 +13,9 @@
         android:theme="@style/Theme.FirebaseDatabase"
         tools:targetApi="31">
         <activity
+            android:name=".ForgotPasswordPage"
+            android:exported="false" />
+        <activity
             android:name=".SignupPage"
             android:exported="false" />
         <activity
