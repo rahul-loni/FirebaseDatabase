@@ -68,6 +68,7 @@
         android:textColor="#F60212"
         android:textSize="22sp"
         android:textStyle="bold"
+        android:onClick="ForgotPassword"
         />
 
 </LinearLayout>
